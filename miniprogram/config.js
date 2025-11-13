@@ -3,42 +3,38 @@
 // 不要删除设置项，例如识猫页，删除会导致编译出错！
 // 修改时频繁保存、频繁编译，发现改错了立马撤销
 
-
 module.exports = {
   // 版本号
-  app_version: "v1.17.2",
+  app_version: "v2.0.0",
   // 小程序appid
-  app_id: "wx5bd705b2bc91c73b",
+  app_id: 'wx23e3f0a6d9395c90',
   // EMAS空间ID
-  space_id: "mp-4bc42af8-4abd-490d-85dd-7cb5b9e58f5b",
+  space_id: 'mp-3f85af5c-9a4c-4c89-8a8a-c1e9900c0992',
   // 服务空间 secret key
-  space_secret: require('./appSecret').space_secret,
+  space_secret: 'pIdofhryakRJfE1CZr49qQ==',
   // 服务空间地址Api Endpoint
-  space_endpoint: "https://api.next.bspapp.com",
-  use_private_tencent_cos: true,
-  // 私有的腾讯云cos签名过期时间（秒）
-  sign_expires_tencent_cos: 3600 * 2,
+  space_endpoint: 'https://api.next.bspapp.com',
 
   // 科普页图片
   science_imgs: [
-    `https://cos.ap-guangzhou.myqcloud.com/maopu-1251740905/系统/科普1.png`,
-    `https://cos.ap-guangzhou.myqcloud.com/maopu-1251740905/系统/科普2.png`,
-    `https://cos.ap-guangzhou.myqcloud.com/maopu-1251740905/系统/科普3.png`,
-    `https://cos.ap-guangzhou.myqcloud.com/maopu-1251740905/系统/科普4.png`,
-    `https://cos.ap-guangzhou.myqcloud.com/maopu-1251740905/系统/科普5.png`
+    "	https://txc-1256552330.cos.ap-guangzhou.myqcloud.com/系统/科普1.png",
+    "	https://txc-1256552330.cos.ap-guangzhou.myqcloud.com/系统/科普2.png",
+    "	https://txc-1256552330.cos.ap-guangzhou.myqcloud.com/系统/科普3.png",
+    "	https://txc-1256552330.cos.ap-guangzhou.myqcloud.com/系统/科普4.png",
+    "	https://txc-1256552330.cos.ap-guangzhou.myqcloud.com/系统/科普5.png"
   ],
 
   // 赞赏码图片
-  reward_img: `https://cos.ap-guangzhou.myqcloud.com/maopu-1251740905/系统/赞赏码.jpg`,
+  reward_img: "	https://txc-1256552330.cos.ap-guangzhou.myqcloud.com/系统/赞赏码.jpg",
   // 新猫问卷图片
-  feedback_wj_img: `https://cos.ap-guangzhou.myqcloud.com/maopu-1251740905/系统/新猫问卷.png`,
+  feedback_wj_img: "	https://txc-1256552330.cos.ap-guangzhou.myqcloud.com/系统/新猫问卷.png",
   // 小程序菊花码图片
-  mpcode_img: `https://cos.ap-guangzhou.myqcloud.com/maopu-1251740905/系统/菊花码.jpg`,
+  mpcode_img: "	https://txc-1256552330.cos.ap-guangzhou.myqcloud.com/系统/菊花码.jpg",
 
   // 徽章排行榜的数量榜logo
-  badge_rank_count_img: `https://cos.ap-guangzhou.myqcloud.com/maopu-1251740905/系统/badge_rank_count.png`,
+  badge_rank_count_img: "	https://txc-1256552330.cos.ap-guangzhou.myqcloud.com/系统/badge_rank_count.png",
   // 徽章排行榜的价值榜logo
-  badge_rank_score_img: `https://cos.ap-guangzhou.myqcloud.com/maopu-1251740905/系统/badge_rank_score.png`,
+  badge_rank_score_img: "	https://txc-1256552330.cos.ap-guangzhou.myqcloud.com/系统/badge_rank_score.png",
 
   // 猫猫领养状态字符串，对应数据库cat.adopt中的数字下标
   cat_status_adopt: ["未领养", "已领养", "寻找领养中"],
@@ -48,7 +44,7 @@ module.exports = {
   // 各种文字内容
   text: {
     // 小程序名
-    app_name: "笃行猫谱",
+    app_name: "科师猫猫图鉴",
     // 首页，pages/genealogy/genealogy
     genealogy: {
       share_tip: "发现身边校园猫咪",
@@ -66,7 +62,7 @@ module.exports = {
     // 关于页，pages/info/info
     info: {
       share_tip: "关于",
-      slogan: "拍照记录校园内猫猫的成长轨迹",
+      slogan: "记录校园内猫猫的成长轨迹",
     },
     // 猫猫详情页，pages/genealogy/detailCat/detailCat
     detail_cat: {
@@ -122,7 +118,7 @@ module.exports = {
       ad_success_tip: "多谢喵(ฅ'ω'ฅ)!",
       ad_fail_tip: "没播完喵...",
       reward_tip_title: "投喂罐头",
-      reward_tip: "您的投喂及广告收入将用作猫猫救助，每月的收支都会在“笃行志愿服务队”公众号进行公开，感谢您对中大流浪猫的帮助与支持！\n喵(^･ｪ･^)",
+      reward_tip: "您的投喂及广告收入将用作猫猫救助，每月的收支都会在“田小橙公众号”微信公众号进行公开，感谢您对广科师流浪猫的帮助与支持！\n喵(^･ｪ･^)",
       reward_count_tip: "* 每月统计一次，在公众号公示，多谢晒（鞠躬）",
       reward_title: "爱心捐款",
     },
@@ -141,12 +137,12 @@ module.exports = {
       new_cat_tip_title: "新的猫猫",
       new_cat_tip: "提交猫谱中没有的猫猫信息，给猫猫上户口~",
       contract_tip_title: "更多联系",
-      contract_tip: "有关猫猫信息添加、小程序的建议、照片维权、猫猫领养咨询等事项，请关注笃行志愿服务队公众号后留言，或邮件：dxzyfwd@163.com",
+      contract_tip: "有关猫猫信息添加、小程序的建议、照片维权、猫猫领养咨询等事项，请关注“田小橙公众号”微信公众号后留言，或邮件：2768651338@qq.com",
     },
     // 开发团队页，pages/info/devTeam/devTeam
     dev_team: {
       share_tip: "开发团队",
-      team: "程序开发：渔政、蓝卷、XD、zJ、ArcherJo、yw、lauzeyu、xuannfx、LightHouse-1024\n资料维护：Lo\n初期资料整理：hehe、玥琪、大米\n以及各校区猫群的小伙伴~\n非常欢迎新朋友加入设计开发哇~！",
+      team: "程序开发：田小橙\n初期资料整理：hehe、玥琪、大米\n\n感谢各校区猫群的小伙伴的大力支持~\n非常欢迎新朋友加入设计开发哇~！",
     },
     // 识猫页，pages/recognize/recognize
     recognize: {
