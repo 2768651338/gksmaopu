@@ -14,6 +14,8 @@ module.exports = {
   space_secret: 'pIdofhryakRJfE1CZr49qQ==',
   // 服务空间地址Api Endpoint
   space_endpoint: 'https://api.next.bspapp.com',
+  // 图片选择数量限制
+  chooseMediaCount: 20, 
 
   // 科普页图片
   science_imgs: [
