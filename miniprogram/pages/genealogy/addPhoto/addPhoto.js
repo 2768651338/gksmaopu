@@ -99,8 +99,14 @@ Page({
     })
     var photos = [];
     for (var file of res.tempFiles) {
-      // 需要压缩
-      if (file.size > 512 * 1024) {
+      // 需要压缩（大于5MB压缩5%,大于10MB压缩10%，大于20MB压缩30%）
+      if (file.size > 5120 * 1024) {
+        file.path = await compressImage(file.tempFilePath, 5);
+        console.log("compressed path:", file.path);
+      } else if (file.size > 10240 * 1024) {
+        file.path = await compressImage(file.tempFilePath, 10);
+        console.log("compressed path:", file.path);
+      } else if (file.size > 20480 * 1024) {
         file.path = await compressImage(file.tempFilePath, 30);
         console.log("compressed path:", file.path);
       } else {
